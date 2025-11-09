@@ -1,17 +1,13 @@
-Absolutely 👍 here’s the **complete, polished README.md** — all in one single copy-paste block.
-Just copy this entire thing and replace your current `README.md` with it ⬇️
-
----
 
 ````markdown
-# 🖥️ Dynamic Device Status Dashboard
+#  Dynamic Device Status Dashboard
 
 A full-stack web application that displays the **real-time status of IoT devices** (Online/Offline) for multiple companies.  
 Built with **Flask**, **PostgreSQL**, and **Vanilla JavaScript**, this project demonstrates modular backend design, clean UI, and real-time status updates.
 
 ---
 
-## 🚀 Tech Stack
+##  Tech Stack
 
 | Layer | Technology |
 |--------|-------------|
@@ -22,15 +18,15 @@ Built with **Flask**, **PostgreSQL**, and **Vanilla JavaScript**, this project d
 
 ---
 
-## ⚙️ Setup & Run Instructions
+##  Setup & Run Instructions
 
-### 1️⃣ Clone the Repository
+### 1️. Clone the Repository
 ```bash
 git clone https://github.com/somishettybadreesh/dynamic-device-status.git
 cd dynamic-device-status
 ````
 
-### 2️⃣ Set Up the Database (PostgreSQL)
+### 2. Set Up the Database (PostgreSQL)
 
 1. Open **pgAdmin** or terminal and create a database named:
 
@@ -50,7 +46,7 @@ cd dynamic-device-status
    psql -U postgres -d devices_db -f sql/seed.sql
    ```
 
-### 3️⃣ Backend Setup
+### 3️. Backend Setup
 
 ```bash
 cd backend
@@ -74,11 +70,11 @@ python app.py
 ```
 
 The Flask API will start at:
-👉 `http://localhost:5000`
+ `http://localhost:5000`
 
 ---
 
-### 4️⃣ Frontend Setup
+### 4️. Frontend Setup
 
 The frontend uses plain JavaScript — no extra dependencies required.
 
@@ -86,29 +82,29 @@ Open `frontend/index.html` in your browser,
 or serve it automatically via Flask (it’s already integrated).
 
 Frontend runs at:
-👉 `http://localhost:5000`
+ `http://localhost:5000`
 
 ---
 
-## 🧠 Application Overview
+##  Application Overview
 
-### 🏢 Companies
+###  Companies
 
 * Dynamically loaded from backend via `/api/companies`
 * Shown in a dropdown selector.
 
-### ⚙️ Devices
+###  Devices
 
 * When a company is selected, devices are fetched via `/api/companies/<id>/devices`.
 * Each device is displayed as a **status tile** (Green = Online, Red = Offline).
 
-### 🔄 Auto Refresh
+###  Auto Refresh
 
 * Every **10 seconds**, device statuses refresh automatically without reloading the page.
 
 ---
 
-## 📡 API Documentation
+##  API Documentation
 
 ### `GET /api/companies`
 
@@ -157,9 +153,9 @@ Fetch all devices belonging to the specified company.
 
 ---
 
-## 🧩 Database Schema
+##  Database Schema
 
-### 🏢 `companies`
+###  `companies`
 
 | Column     | Type               | Description    |
 | ---------- | ------------------ | -------------- |
@@ -167,7 +163,7 @@ Fetch all devices belonging to the specified company.
 | name       | TEXT               | Company Name   |
 | created_at | TIMESTAMP          | Auto timestamp |
 
-### 💻 `devices`
+###  `devices`
 
 | Column     | Type               | Description                |
 | ---------- | ------------------ | -------------------------- |
@@ -176,7 +172,7 @@ Fetch all devices belonging to the specified company.
 | name       | TEXT               | Device Name                |
 | created_at | TIMESTAMP          | Auto timestamp             |
 
-### 📊 `device_readings`
+###  `device_readings`
 
 | Column        | Type               | Description              |
 | ------------- | ------------------ | ------------------------ |
@@ -187,7 +183,7 @@ Fetch all devices belonging to the specified company.
 
 ---
 
-## 💡 Assumptions Made
+##  Assumptions Made
 
 1. The backend simulates real-time behavior by checking reading timestamps; no live stream integration was required.
 2. All timestamps are stored in UTC for consistency.
@@ -197,7 +193,7 @@ Fetch all devices belonging to the specified company.
 
 ---
 
-## 🧱 Folder Structure
+##  Folder Structure
 
 ```
 dynamic-device-status/
@@ -227,8 +223,7 @@ dynamic-device-status/
 
 ---
 
-## 🧰 Future Improvements (Extensibility)
-
+##  Future Improvements (Extensibility)
 * Add authentication for company admins.
 * Add new device types with live metrics.
 * Implement WebSocket updates for true real-time monitoring.
@@ -237,7 +232,7 @@ dynamic-device-status/
 
 ---
 
-## ✨ Evaluation Mapping
+##  Evaluation Mapping
 
 | Criteria          | Implementation                              |
 | ----------------- | ------------------------------------------- |
@@ -250,24 +245,12 @@ dynamic-device-status/
 
 ---
 
-## 🧑‍💻 Author
+##  Author
 
 **Badreesh Somishetty**
 [GitHub Profile →](https://github.com/somishettybadreesh)
 
 ---
 
-Your GitHub repo will now look polished and ready for evaluation or placement submission 🎯.
 
 ````
-
----
-
-✅ After pasting:
-```bash
-git add README.md
-git commit -m "Add detailed README documentation"
-git push -u origin main
-````
-
-Then check your repo — you’ll have a **clean, professional README** with everything the evaluators expect.
