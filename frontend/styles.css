@@ -1,0 +1,111 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #f5f8fb;
+  color: #222;
+}
+.container {
+  max-width: 1000px;
+  margin: 32px auto;
+  padding: 24px;
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 2px 18px rgba(44,62,80,0.08);
+}
+h1 {
+  margin-bottom: 20px;
+  font-size: 2em;
+  text-align: center;
+  color: #234175;
+}
+.controls {
+  display: flex;
+  gap: 18px;
+  align-items: center;
+  margin-bottom: 18px;
+  flex-wrap: wrap;
+}
+select {
+  padding: 8px 12px;
+  border-radius: 6px;
+  border: 1px solid #ced6e0;
+  background: #f1f3f6;
+  font-size: 15px;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill,minmax(240px,1fr));
+  gap: 18px;
+}
+.tile {
+  background: #f8fcff;
+  padding: 18px 14px;
+  border-radius: 11px;
+  box-shadow: 0 2px 10px rgba(52,92,136,0.08);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  transition: box-shadow 0.15s;
+  border-left: 4px solid #eaf2fb;
+}
+.tile:hover {
+  box-shadow: 0 8px 28px rgba(44,62,80,0.16);
+  border-left: 4px solid #2464c6;
+}
+.device-info {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.device-name {
+  font-weight: 600;
+  font-size: 1.13em;
+  color: #234175;
+}
+.device-id {
+  font-size: 0.97em;
+  color: #495968;
+  font-family: 'Courier New', monospace;
+  letter-spacing: .2px;
+}
+.device-last {
+  font-size: 0.95em;
+  color: #7992a8;
+}
+.status {
+  align-self: flex-end;
+  padding: 10px 22px;
+  font-size: 1em;
+  font-weight: 700;
+  border-radius: 22px;
+  color: #fff;
+  text-align: center;
+  min-width: 88px;
+  text-transform: uppercase;
+}
+.status.online {
+  background: linear-gradient(87deg, #28a745 75%, #209e41 100%);
+}
+.status.offline {
+  background: linear-gradient(87deg, #dc3545 75%, #c0392b 100%);
+}
+.notification {
+  padding: 12px;
+  margin-bottom: 16px;
+  border-radius: 7px;
+  font-weight: 500;
+  background: #e8f8ee;
+  border-left: 6px solid #28a745;
+  box-shadow: 0 2px 8px rgba(52,211,153,0.11);
+  opacity: 0;
+  transition: opacity 0.4s;
+  min-height: 24px;
+}
+.notification.show {
+  opacity: 1;
+}
+@media (max-width:530px){
+  .container { padding: 8px; }
+  .controls { flex-direction: column; gap: 8px; }
+  .grid { grid-template-columns: 1fr; }
+}
