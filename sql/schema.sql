@@ -18,7 +18,5 @@ CREATE TABLE device_readings (
   created_at TIMESTAMP DEFAULT now()
 );
 
-CREATE INDEX IF NOT EXISTS idx_device_readings_device_id_created_at 
+CREATE INDEX IF NOT EXISTS idx_device_readings_device_id_created_at
 ON device_readings(device_id, created_at DESC);
-
-
